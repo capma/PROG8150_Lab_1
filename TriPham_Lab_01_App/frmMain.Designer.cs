@@ -44,8 +44,7 @@
             this.lblParis.Name = "lblParis";
             this.lblParis.Size = new System.Drawing.Size(56, 29);
             this.lblParis.TabIndex = 0;
-            this.lblParis.MouseLeave += new System.EventHandler(this.lblParis_MouseLeave);
-            this.lblParis.MouseHover += new System.EventHandler(this.lblParis_MouseHover);
+            this.lblParis.Click += new System.EventHandler(this.lblParis_Click);
             // 
             // lblLondon
             // 
@@ -55,8 +54,7 @@
             this.lblLondon.Name = "lblLondon";
             this.lblLondon.Size = new System.Drawing.Size(57, 28);
             this.lblLondon.TabIndex = 2;
-            this.lblLondon.MouseLeave += new System.EventHandler(this.lblLondon_MouseLeave);
-            this.lblLondon.MouseHover += new System.EventHandler(this.lblLondon_MouseHover);
+            this.lblLondon.Click += new System.EventHandler(this.lblLondon_Click);
             // 
             // lblStPetersburg
             // 
@@ -66,8 +64,7 @@
             this.lblStPetersburg.Name = "lblStPetersburg";
             this.lblStPetersburg.Size = new System.Drawing.Size(83, 32);
             this.lblStPetersburg.TabIndex = 2;
-            this.lblStPetersburg.MouseLeave += new System.EventHandler(this.lblStPetersburg_MouseLeave);
-            this.lblStPetersburg.MouseHover += new System.EventHandler(this.lblStPetersburg_MouseHover);
+            this.lblStPetersburg.Click += new System.EventHandler(this.lblStPetersburg_Click);
             // 
             // lblPrague
             // 
@@ -77,8 +74,7 @@
             this.lblPrague.Name = "lblPrague";
             this.lblPrague.Size = new System.Drawing.Size(59, 30);
             this.lblPrague.TabIndex = 2;
-            this.lblPrague.MouseLeave += new System.EventHandler(this.lblPrague_MouseLeave);
-            this.lblPrague.MouseHover += new System.EventHandler(this.lblPrague_MouseHover);
+            this.lblPrague.Click += new System.EventHandler(this.lblPrague_Click);
             // 
             // txtCityInfo
             // 
