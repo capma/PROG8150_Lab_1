@@ -215,13 +215,6 @@ namespace TriPham_Lab_01_App
             CityLocation();
         }
 
-
-        private void txtCityInfo_ContentsResized(object sender, ContentsResizedEventArgs e)
-        {
-            //var richTextBox = (RichTextBox)sender;
-            //richTextBox.Width = e.NewRectangle.Width;
-            //richTextBox.Height = e.NewRectangle.Height;
-        }
         #endregion
 
     }

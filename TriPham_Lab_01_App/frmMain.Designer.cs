@@ -91,7 +91,6 @@
             this.txtCityInfo.TabIndex = 3;
             this.txtCityInfo.Text = resources.GetString("txtCityInfo.Text");
             this.txtCityInfo.Visible = false;
-            this.txtCityInfo.ContentsResized += new System.Windows.Forms.ContentsResizedEventHandler(this.txtCityInfo_ContentsResized);
             // 
             // frmMain
             // 
