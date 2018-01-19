@@ -1,0 +1,19 @@
+Image: 930 x 567
+	London:		X-525 Y-95 Right-582 Bottom-123
+	Paris:		X-640 Y-63 Right-697 Bottom-98
+	Petersbug:	X-736 Y-53 Right-819 Bottom-85
+	Prague:		X-736 Y-180 Right-795 Bottom-210
+
+
+
+
+
+
+
+
+
+
+
+
+
+
