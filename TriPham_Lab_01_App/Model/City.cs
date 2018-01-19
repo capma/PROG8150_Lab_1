@@ -1,18 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TriPham_Lab_01_App
 {
     class City
     {
-        public string info { get; private set; }
+        #region Properties
 
+        public string info { get; protected set; }
+        public Common.CityName cityName { get; protected set; }
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="cityName"></param>
         public City(Common.CityName cityName)
         {
-            switch (cityName)
+            this.cityName = cityName;
+            SetCityInfo();
+        }
+
+        #endregion
+
+        #region Methods
+
+        /// <summary>
+        /// SetCityInfo
+        /// </summary>
+        protected void SetCityInfo()
+        {
+            switch (this.cityName)
             {
                 case Common.CityName.London:
                     this.info += "Area" + Environment.NewLine;
@@ -64,5 +84,8 @@ namespace TriPham_Lab_01_App
                     break;
             }
         }
+
+        #endregion
+
     }
 }

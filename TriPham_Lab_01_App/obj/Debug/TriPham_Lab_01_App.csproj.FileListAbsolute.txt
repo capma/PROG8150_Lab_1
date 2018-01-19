@@ -18,3 +18,12 @@ D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\20180
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\20180118\Projects\GIT\PROG8150_User_Interface_Design_Principles\TriPham_Lab_01_App\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.exe
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\20180118\Projects\GIT\PROG8150_User_Interface_Design_Principles\TriPham_Lab_01_App\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.pdb
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\20180118\Projects\GIT\PROG8150_User_Interface_Design_Principles\TriPham_Lab_01_App\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.csprojResolveAssemblyReference.cache
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\bin\Debug\TriPham_Lab_01_App.exe.config
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\bin\Debug\TriPham_Lab_01_App.exe
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\bin\Debug\TriPham_Lab_01_App.pdb
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.frmMain.resources
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.Properties.Resources.resources
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.csproj.GenerateResource.Cache
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.csproj.CoreCompileInputs.cache
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.exe
+D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.pdb

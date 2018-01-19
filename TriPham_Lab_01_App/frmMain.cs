@@ -6,9 +6,10 @@ namespace TriPham_Lab_01_App
 {
     public partial class frmMain : Form
     {
+        #region Properties
+
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
-
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         [System.Runtime.InteropServices.DllImportAttribute("user32.dll")]
@@ -17,6 +18,13 @@ namespace TriPham_Lab_01_App
         private const int cGrip = 16;      // Grip size
         private const int cCaption = 32;   // Caption bar height;
 
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Form constructor
+        /// </summary>
         public frmMain()
         {
             InitializeComponent();
@@ -26,6 +34,10 @@ namespace TriPham_Lab_01_App
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 
+        #endregion
+
+        #region Events
+        
         /// <summary>
         /// Able to resize form
         /// </summary>
@@ -55,8 +67,11 @@ namespace TriPham_Lab_01_App
             }
             return base.ProcessDialogKey(keyData);
         }
-
-
+        
+        /// <summary>
+        /// Override resize form
+        /// </summary>
+        /// <param name="m"></param>
         protected override void WndProc(ref Message m)
         {
             if (m.Msg == 0x84)
@@ -77,6 +92,11 @@ namespace TriPham_Lab_01_App
             base.WndProc(ref m);
         }
 
+        /// <summary>
+        /// Display Paris' info when hovering mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblParis_MouseHover(object sender, EventArgs e)
         {
             lblParis.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -84,12 +104,22 @@ namespace TriPham_Lab_01_App
             txtCityInfo.DisplayContent(cityParis.info, lblParis);
         }
 
+        /// <summary>
+        /// Disappear Paris' info when leaving mouse out of Paris
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblParis_MouseLeave(object sender, EventArgs e)
         {
             lblParis.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txtCityInfo.Visible = false;
         }
 
+        /// <summary>
+        /// Display London' info when hovering mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblLondon_MouseHover(object sender, EventArgs e)
         {
             lblLondon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -97,12 +127,22 @@ namespace TriPham_Lab_01_App
             txtCityInfo.DisplayContent(cityLondon.info, lblLondon);
         }
 
+        /// <summary>
+        /// Disappear London' info when leaving mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblLondon_MouseLeave(object sender, EventArgs e)
         {
             lblLondon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txtCityInfo.Visible = false;
         }
 
+        /// <summary>
+        /// Display StPetersburg' info when hovering mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblStPetersburg_MouseHover(object sender, EventArgs e)
         {
             lblStPetersburg.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -110,12 +150,22 @@ namespace TriPham_Lab_01_App
             txtCityInfo.DisplayContent(cityStPetersburg.info, lblStPetersburg);
         }
 
+        /// <summary>
+        /// Disappear StPetersburg' info when leaving mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblStPetersburg_MouseLeave(object sender, EventArgs e)
         {
             lblStPetersburg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txtCityInfo.Visible = false;
         }
 
+        /// <summary>
+        /// Display Prague' info when hovering mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblPrague_MouseHover(object sender, EventArgs e)
         {
             lblPrague.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -123,14 +173,20 @@ namespace TriPham_Lab_01_App
             txtCityInfo.DisplayContent(cityPrague.info, lblPrague);
         }
 
+        /// <summary>
+        /// Disappear Prague' info when leaving mouse
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblPrague_MouseLeave(object sender, EventArgs e)
         {
             lblPrague.BorderStyle = System.Windows.Forms.BorderStyle.None;
             txtCityInfo.Visible = false;
         }
 
-        
-
+        /// <summary>
+        /// Set Relative Location
+        /// </summary>
         private void CityLocation()
         {
             lblLondon.SetRelativeLocation(this.Width, this.Height, 95, 525, 570, 115);
@@ -149,11 +205,16 @@ namespace TriPham_Lab_01_App
             CityLocation();
         }
 
-
+        /// <summary>
+        /// Move city labels along when resizing the form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void frmMain_Resize(object sender, EventArgs e)
         {
             CityLocation();
         }
+
 
         private void txtCityInfo_ContentsResized(object sender, ContentsResizedEventArgs e)
         {
@@ -161,5 +222,7 @@ namespace TriPham_Lab_01_App
             //richTextBox.Width = e.NewRectangle.Width;
             //richTextBox.Height = e.NewRectangle.Height;
         }
+        #endregion
+
     }
 }
