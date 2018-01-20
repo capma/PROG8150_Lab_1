@@ -27,4 +27,3 @@ D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Proje
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.csproj.CoreCompileInputs.cache
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.exe
 D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.pdb
-D:\WORKING\CONESTOGA\SEMESTER1\PROG8150 - User Interface Design Principles\Projects\PROG8150_Lab_1\TriPham_Lab_01_App\obj\Debug\TriPham_Lab_01_App.csprojResolveAssemblyReference.cache

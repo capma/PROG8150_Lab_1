@@ -58,7 +58,7 @@ namespace TriPham_Lab_01_App
                     this.Info += " • Greater London	8,787,892" + Environment.NewLine;
                     this.Info += " • Density		5,590/km2 (14,500/sq mi)" + Environment.NewLine;
                     this.Info += " • Urban		9,787,426" + Environment.NewLine;
-                    this.Info += " • Metro		14,040,163" + Environment.NewLine;
+                    this.Info += " • Metro		14,040,163";
                     break;
 
                 case Common.CityName.Paris:
@@ -74,7 +74,7 @@ namespace TriPham_Lab_01_App
                     this.Info += " • Urban		10,601,122" + Environment.NewLine;
                     this.Info += " • Urban density	3,700/km2 (9,700/sq mi)" + Environment.NewLine;
                     this.Info += " • Metro		12,405,426" + Environment.NewLine;
-                    this.Info += " • Metro density	720/km2 (1,900/sq mi)" + Environment.NewLine;
+                    this.Info += " • Metro density	720/km2 (1,900/sq mi)";
                     break;
 
                 case Common.CityName.Prague:
@@ -85,7 +85,7 @@ namespace TriPham_Lab_01_App
                     this.Info += "" + Environment.NewLine;
                     this.Info += "Population (2017)" + Environment.NewLine;
                     this.Info += " • Capital city           1,280,508" + Environment.NewLine;
-                    this.Info += " • Metro		2,156,097" + Environment.NewLine;
+                    this.Info += " • Metro		2,156,097";
                     break;
 
                 case Common.CityName.St_Petersbug:
@@ -94,7 +94,7 @@ namespace TriPham_Lab_01_App
                     this.Info += "Area rank		82nd" + Environment.NewLine;
                     this.Info += "" + Environment.NewLine;
                     this.Info += "Population (2017 est.)" + Environment.NewLine;
-                    this.Info += " • Total		5,323,300 " + Environment.NewLine;
+                    this.Info += " • Total		5,323,300 ";
                     break;
             }
         }

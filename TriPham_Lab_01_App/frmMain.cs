@@ -55,7 +55,7 @@ namespace TriPham_Lab_01_App
         /// <summary>
         /// Set Relative Location
         /// </summary>
-        private void CityLocation()
+        private void SetCityRelativeLocation()
         {
             lblLondon.SetRelativeLocation(this.Width, this.Height, CityLondon.Top, CityLondon.Left, CityLondon.Right, CityLondon.Bottom);
             lblParis.SetRelativeLocation(this.Width, this.Height, CityParis.Top, CityParis.Left, CityParis.Right, CityParis.Bottom);
@@ -119,18 +119,22 @@ namespace TriPham_Lab_01_App
         {
             if (m.Msg == 0x84)
             {
+                // Hide the city info (RichTextBox) away
                 txtCityInfo.Visible = false;
+
                 // Trap WM_NCHITTEST
                 Point pos = new Point(m.LParam.ToInt32());
                 pos = this.PointToClient(pos);
                 if (pos.Y < cCaption)
                 {
-                    m.Result = (IntPtr)2;  // HTCAPTION
+                    // HTCAPTION
+                    m.Result = (IntPtr)2;  
                     return;
                 }
-                if (pos.X >= this.ClientSize.Width - cGrip && pos.Y >= this.ClientSize.Height - cGrip)
+                if ((pos.X >= this.ClientSize.Width - cGrip) && (pos.Y >= this.ClientSize.Height - cGrip))
                 {
-                    m.Result = (IntPtr)17; // HTBOTTOMRIGHT
+                    // HTBOTTOMRIGHT
+                    m.Result = (IntPtr)17; 
                     return;
                 }
             }
@@ -145,7 +149,7 @@ namespace TriPham_Lab_01_App
         private void frmMain_Load(object sender, EventArgs e)
         {
             InitCityInformation();
-            CityLocation();
+            SetCityRelativeLocation();
         }
 
         /// <summary>
@@ -155,7 +159,7 @@ namespace TriPham_Lab_01_App
         /// <param name="e"></param>
         private void frmMain_Resize(object sender, EventArgs e)
         {
-            CityLocation();
+            SetCityRelativeLocation();
         }
 
         #endregion
