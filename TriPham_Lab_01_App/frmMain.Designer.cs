@@ -34,6 +34,7 @@
             this.lblStPetersburg = new System.Windows.Forms.Label();
             this.lblPrague = new System.Windows.Forms.Label();
             this.txtCityInfo = new System.Windows.Forms.RichTextBox();
+            this.lblClose = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblParis
@@ -81,12 +82,24 @@
             this.txtCityInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.txtCityInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCityInfo.ForeColor = System.Drawing.Color.Yellow;
-            this.txtCityInfo.Location = new System.Drawing.Point(12, 12);
+            this.txtCityInfo.Location = new System.Drawing.Point(12, 416);
             this.txtCityInfo.Name = "txtCityInfo";
-            this.txtCityInfo.Size = new System.Drawing.Size(385, 227);
+            this.txtCityInfo.Size = new System.Drawing.Size(338, 217);
             this.txtCityInfo.TabIndex = 3;
             this.txtCityInfo.Text = resources.GetString("txtCityInfo.Text");
             this.txtCityInfo.Visible = false;
+            // 
+            // lblClose
+            // 
+            this.lblClose.BackColor = System.Drawing.Color.Transparent;
+            this.lblClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.Color.Yellow;
+            this.lblClose.Location = new System.Drawing.Point(7, 9);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(31, 29);
+            this.lblClose.TabIndex = 5;
+            this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // frmMain
             // 
@@ -95,6 +108,7 @@
             this.BackgroundImage = global::TriPham_Lab_01_App.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1240, 698);
+            this.Controls.Add(this.lblClose);
             this.Controls.Add(this.txtCityInfo);
             this.Controls.Add(this.lblPrague);
             this.Controls.Add(this.lblStPetersburg);
@@ -118,6 +132,7 @@
         private System.Windows.Forms.Label lblStPetersburg;
         private System.Windows.Forms.Label lblPrague;
         private System.Windows.Forms.RichTextBox txtCityInfo;
+        private System.Windows.Forms.Label lblClose;
     }
 }
 

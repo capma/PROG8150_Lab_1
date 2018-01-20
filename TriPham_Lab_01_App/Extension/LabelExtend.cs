@@ -6,7 +6,7 @@ namespace TriPham_Lab_01_App
     public static class LabelExtend
     {
         /// <summary>
-        /// SetRelativeLocation
+        /// Set relative location for each city position in the background
         /// </summary>
         /// <param name="self"></param>
         /// <param name="formWidth"></param>

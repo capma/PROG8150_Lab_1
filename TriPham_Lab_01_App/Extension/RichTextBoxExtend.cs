@@ -14,7 +14,7 @@ namespace TriPham_Lab_01_App
         {
             self.Clear();
             self.AppendText(cityInfo);
-            self.Top = label.Bottom + 5;
+            self.Top = label.Bottom;
             self.Left = label.Left + label.Width - self.Width;
             self.Visible = true;
         }

@@ -63,6 +63,19 @@ namespace TriPham_Lab_01_App
             lblPrague.SetRelativeLocation(this.Width, this.Height, CityPrague.Top, CityPrague.Left, CityPrague.Right, CityPrague.Bottom);
         }
 
+        /// <summary>
+        /// Auto fit RichTextBox
+        /// </summary>
+        /// <param name="richTextBox"></param>
+        private void AutofitTextBox(RichTextBox richTextBox)
+        {
+            using (Graphics g = CreateGraphics())
+            {
+                richTextBox.Height = (int)g.MeasureString(richTextBox.Text,
+                    richTextBox.Font, richTextBox.Width).Height + 20;
+            }
+        }
+
         #endregion
 
         #region Events
@@ -148,6 +161,17 @@ namespace TriPham_Lab_01_App
         #endregion
 
         #region Label Events
+
+        /// <summary>
+        /// Click to close form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         /// <summary>
         /// lblLondon_Click
         /// </summary>
@@ -156,6 +180,7 @@ namespace TriPham_Lab_01_App
         private void lblLondon_Click(object sender, EventArgs e)
         {
             txtCityInfo.DisplayContent(CityLondon.Info, lblLondon);
+            AutofitTextBox(txtCityInfo);
         }
 
         /// <summary>
@@ -166,6 +191,7 @@ namespace TriPham_Lab_01_App
         private void lblParis_Click(object sender, EventArgs e)
         {
             txtCityInfo.DisplayContent(CityParis.Info, lblParis);
+            AutofitTextBox(txtCityInfo);
         }
 
         /// <summary>
@@ -176,6 +202,7 @@ namespace TriPham_Lab_01_App
         private void lblStPetersburg_Click(object sender, EventArgs e)
         {
             txtCityInfo.DisplayContent(CityStPetersburgs.Info, lblStPetersburg);
+            AutofitTextBox(txtCityInfo);
         }
 
         /// <summary>
@@ -186,6 +213,7 @@ namespace TriPham_Lab_01_App
         private void lblPrague_Click(object sender, EventArgs e)
         {
             txtCityInfo.DisplayContent(CityPrague.Info, lblPrague);
+            AutofitTextBox(txtCityInfo);
         }
 
         #endregion

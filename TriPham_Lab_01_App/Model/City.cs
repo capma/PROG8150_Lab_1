@@ -8,7 +8,6 @@ namespace TriPham_Lab_01_App
 
         public string Info { get; private set; }
         public Common.CityName CityName { get; private set; }
-
         public int Top { get; private set; }
         public int Left { get; private set; }
         public int Right { get; private set; }
@@ -64,13 +63,13 @@ namespace TriPham_Lab_01_App
 
                 case Common.CityName.Paris:
                     this.Info += "Area" + Environment.NewLine;
-                    this.Info += " • City	105.4 km2 	(40.7 sq mi)" + Environment.NewLine;
+                    this.Info += " • City	                105.4 km2 (40.7 sq mi)" + Environment.NewLine;
                     this.Info += " • Urban		2,845 km2 (1,098 sq mi)" + Environment.NewLine;
                     this.Info += " • Metro		17,174.4 km2 (6,631.1 sq mi)" + Environment.NewLine;
                     this.Info += "" + Environment.NewLine;
                     this.Info += "Population (2015)" + Environment.NewLine;
-                    this.Info += " • City			2,206,488" + Environment.NewLine;
-                    this.Info += " • Rank	1st in France" + Environment.NewLine;
+                    this.Info += " • City                       2,206,488" + Environment.NewLine;
+                    this.Info += " • Rank	                1st in France" + Environment.NewLine;
                     this.Info += " • Density		21,000/km2 (54,000/sq mi)" + Environment.NewLine;
                     this.Info += " • Urban		10,601,122" + Environment.NewLine;
                     this.Info += " • Urban density	3,700/km2 (9,700/sq mi)" + Environment.NewLine;
@@ -85,7 +84,7 @@ namespace TriPham_Lab_01_App
                     this.Info += "Lowest elevation	177 m (581 ft)" + Environment.NewLine;
                     this.Info += "" + Environment.NewLine;
                     this.Info += "Population (2017)" + Environment.NewLine;
-                    this.Info += " • Capital city		1,280,508" + Environment.NewLine;
+                    this.Info += " • Capital city           1,280,508" + Environment.NewLine;
                     this.Info += " • Metro		2,156,097" + Environment.NewLine;
                     break;
 
@@ -95,7 +94,7 @@ namespace TriPham_Lab_01_App
                     this.Info += "Area rank		82nd" + Environment.NewLine;
                     this.Info += "" + Environment.NewLine;
                     this.Info += "Population (2017 est.)" + Environment.NewLine;
-                    this.Info += " • Total		5,323,300 (permanent residents within city limits)[6]" + Environment.NewLine;
+                    this.Info += " • Total		5,323,300 " + Environment.NewLine;
                     break;
             }
         }
